@@ -9,6 +9,7 @@
   using Sitecore.ContentSearch.Exceptions;
   using Sitecore.ContentSearch.SearchTypes;
   using Sitecore.ContentSearch.Utilities;
+  using Sitecore.ContentSearch.Client.Pipelines.Search;
   using Sitecore.Data.Items;
   using Sitecore.Diagnostics;
   using Sitecore.Pipelines.Search;
