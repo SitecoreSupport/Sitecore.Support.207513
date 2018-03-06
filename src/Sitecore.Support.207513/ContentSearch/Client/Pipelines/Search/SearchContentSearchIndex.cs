@@ -109,11 +109,11 @@
           {
             if (args.ContentLanguage != null && !args.ContentLanguage.Name.IsNullOrEmpty())
             {
-              query = context.GetQueryable<SitecoreUISearchResultItem>().Where(i => i.Name.StartsWith(args.TextQuery) || (i.Content.Contains(args.TextQuery) && i.Language.Equals(args.ContentLanguage.Name)));
+              query = context.GetQueryable<SitecoreUISearchResultItem>().Where(i => i.Name.Equals(args.TextQuery) || (i.Content.Equals(args.TextQuery) && i.Language.Equals(args.ContentLanguage.Name)));
             }
             else
             {
-              query = context.GetQueryable<SitecoreUISearchResultItem>().Where(i => i.Name.StartsWith(args.TextQuery) || i.Content.Contains(args.TextQuery));
+              query = context.GetQueryable<SitecoreUISearchResultItem>().Where(i => i.Name.Equals(args.TextQuery) || i.Content.Equals(args.TextQuery));
             }
           }
 
