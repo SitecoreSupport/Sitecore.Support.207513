@@ -1,5 +1,5 @@
 # Sitecore.Support.207513
-Contains, StartsWith, EndsWith LINQ methods might not work as expeced wehn using Azure Search provider
+Content Tree search may not work when using Azure Search provider
 
 ## License  
 This patch is licensed under the [Sitecore Corporation A/S License for GitHub](https://github.com/sitecoresupport/Sitecore.Support.207513/blob/master/LICENSE).  
